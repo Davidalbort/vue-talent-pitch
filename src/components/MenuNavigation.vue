@@ -5,11 +5,13 @@ import IconCompany from './icons/IconCompany.vue'
 import IconMenu from './icons/IconMenu.vue'
 import IconArrowDown from './icons/IconArrowDown.vue'
 import IconPlus from './icons/IconPlus.vue'
-
+import ImageOnly from './ImageOnly.vue'
 </script>
 
 <template>
-  <nav class="bg-blue-primary px-4 h-14 flex flex-row justify-between items-center">
+  <nav
+    class="bg-blue-primary px-4 h-14 flex flex-row justify-between items-center"
+  >
     <IconMenu class="ml-4 lg:hidden" />
     <a href="https://website.talentpitch.co/" class="hidden md:block pl-4">
       <IconCompany />
@@ -31,12 +33,18 @@ import IconPlus from './icons/IconPlus.vue'
         </li>
       </ul>
     </menu>
-    <div class="hidden lg:flex flex-row justify-between items-center gap-x-4 text-text-nav">
-      <button class="bg-button-primary flex justify-center items-center gap-x-2 px-3 py-1 rounded">Comenzar <IconPlus/></button>
+    <div
+      class="hidden lg:flex flex-row justify-between items-center gap-x-4 text-text-nav"
+    >
+      <button
+        class="bg-button-primary flex justify-center items-center gap-x-2 px-3 py-1 rounded"
+      >
+        Comenzar <IconPlus />
+      </button>
       <IconMessage class="text-black" />
       <IconNotification />
-      <img src="../assets/profile.png" alt="User Profile" />
-      <IconArrowDown class="mr-4"/>
+      <ImageOnly src="src/assets/profile.png" alt="User Profile" width="41"/>
+      <IconArrowDown class="mr-4" />
     </div>
   </nav>
 </template>

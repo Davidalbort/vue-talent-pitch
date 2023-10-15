@@ -17,5 +17,3 @@ defineProps({
     </h3>
   </div>
 </template>
-
-

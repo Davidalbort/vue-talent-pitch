@@ -5,10 +5,24 @@ export default {
     stroke: (theme) => ({
       white: theme('colors.white')
     }),
-    extend: {},
+    extend: {
+      backgroundImage: {
+        aside: "url('src/assets/aside.png')"
+      }
+    },
     colors: {
       blue: {
         primary: '#1a237e'
+      },
+      gray: {
+        primary: '#E8EAF6',
+        secondary: '#666666'
+      },
+      green: {
+        primary: '#8BC34A'
+      },
+      white: {
+        primary: '#FFFBFC'
       },
       text: {
         nav: '#9fa8da'

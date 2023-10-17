@@ -12,6 +12,8 @@ import IconLinkedin from './icons/IconLinkedin.vue'
 import IconLink from './icons/IconLink.vue'
 import IconShare from './icons/IconShare.vue'
 import IconDownload from './icons/IconDownload.vue'
+import qr from '../assets/qr.png'
+import aside from '../assets/aside.png'
 defineProps({
   titleCompany: {
     type: String,
@@ -110,13 +112,19 @@ defineProps({
         </div>
       </section>
       <section class="flex justify-center">
-        <div class="bg-aside w-72 h-72 rounded-xl"></div>
+        <ImageOnly
+          :src="aside"
+          alt="Image Aside company"
+          width="288"
+          height="288"
+          class="rounded-xl"
+        />
       </section>
       <section
         class="w-72 h-64 flex justify-center items-center border border-gray-primary rounded-xl"
       >
         <ImageOnly
-          src="src/assets/qr.png"
+          :src="qr"
           alt="Image QR company"
           width="204"
           height="204"

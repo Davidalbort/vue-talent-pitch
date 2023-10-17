@@ -1,3 +1,5 @@
+[![Deploy static content to Pages](https://github.com/Davidalbort/vue-talent-pitch/actions/workflows/Deploy.yml/badge.svg)](https://github.com/Davidalbort/vue-talent-pitch/actions/workflows/Deploy.yml)
+
 # talent-pitch
 
 This template should help get you started developing with Vue 3 in Vite.

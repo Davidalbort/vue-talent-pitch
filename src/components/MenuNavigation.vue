@@ -6,6 +6,7 @@ import IconMenu from './icons/IconMenu.vue'
 import IconArrowDown from './icons/IconArrowDown.vue'
 import IconPlus from './icons/IconPlus.vue'
 import ImageOnly from './ImageOnly.vue'
+import profile from '../assets/profile.png'
 </script>
 
 <template>
@@ -43,7 +44,7 @@ import ImageOnly from './ImageOnly.vue'
       </button>
       <IconMessage class="text-black" />
       <IconNotification />
-      <ImageOnly src="src/assets/profile.png" alt="User Profile" width="41"/>
+      <ImageOnly :src="profile" alt="User Profile" width="41"/>
       <IconArrowDown class="mr-4" />
     </div>
   </nav>

@@ -1,10 +1,13 @@
 <script >
 import { mapState, mapGetters} from 'vuex'
-import CarouselSlide from '../components/CarouselSlide.vue';
+
+import CarouselFintech from '../components/CarouselFintech.vue';
+
 export default {
   components:{
-    CarouselSlide,
-  },
+    CarouselFintech,
+   
+},
   computed: {
     ...mapState(['companyId']),
     ...mapGetters('vacancies',['getVacanciesByIdCompany']),
@@ -18,9 +21,10 @@ export default {
 }
 </script> 
 <template>
-    <CarouselSlide 
-     v-if="vacanciesData"
-     :vacancies="vacanciesData.vacancies"
-    />
-  
+  <CarouselFintech 
+    v-if="vacanciesData"
+    :slides="vacanciesData.vacancies"
+  />
+  <!-- <VacancyItem /> -->
+  <div>t</div>
 </template>

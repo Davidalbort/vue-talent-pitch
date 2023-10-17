@@ -12,18 +12,21 @@ export default {
     },
     colors: {
       blue: {
-        primary: '#1a237e'
+        primary: '#1a237e',
+        secondary: '#2196F3'
       },
       gray: {
         primary: '#E8EAF6',
         secondary: '#666666',
-        third: '#212121'
+        third: '#212121',
+        fourth: '#FAFAFA'
       },
       green: {
         primary: '#8BC34A'
       },
       white: {
-        primary: '#FFFBFC'
+        primary: '#FFFBFC',
+        secondary: '#E3F2FD'
       },
       text: {
         nav: '#9fa8da'

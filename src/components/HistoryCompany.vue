@@ -1,21 +1,17 @@
 <script setup>
- defineProps({
-    number: {
-        type:[String,Number],
-        required: true
-    }
- })
+import DynamicIcon from './DynamicIcon.vue';
+defineProps(['icon','header','number'])
 </script>
 <template>
   <div class="flex flex-row justify-between items-center">
     <div class="flex items-center gap-x-1">
-      <slot name="icon"></slot>
+      <DynamicIcon :iconName="icon"/>
       <span class="text-xs text-gray-secondary font-semibold uppercase">
-        <slot name="header"></slot>
+       {{ header }}
       </span>
     </div>
     <span class="text-lg text-gray-secondary font-bold">
-      <slot name="number"></slot>
+      {{number}}
     </span>
 
   </div>

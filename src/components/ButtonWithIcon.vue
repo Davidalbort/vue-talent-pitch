@@ -7,7 +7,7 @@
  })
 </script>
 <template>
-    <button class="">
+    <button class="hover:shadow-md">
       <slot name="left"></slot>
       <span><slot>{{ nameButton }}</slot></span>
       <slot name="right"></slot>

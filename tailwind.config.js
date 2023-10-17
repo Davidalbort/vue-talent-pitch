@@ -16,7 +16,8 @@ export default {
       },
       gray: {
         primary: '#E8EAF6',
-        secondary: '#666666'
+        secondary: '#666666',
+        third: '#212121'
       },
       green: {
         primary: '#8BC34A'

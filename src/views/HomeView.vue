@@ -1,11 +1,10 @@
 <script >
 import { mapState, mapGetters} from 'vuex'
 import SummaryCompany from '../components/SummaryCompany.vue';
-import IconUser from '../components/icons/IconUser.vue';
 export default {
   components:{
     SummaryCompany,
-    IconUser,
+
   },
   computed: {
     ...mapState(['companyId']),

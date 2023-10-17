@@ -1,15 +1,26 @@
-<template>
-  <div class="about">
-    <h1>This is vacancies page</h1>
-  </div>
-</template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+<script >
+import { mapState, mapGetters} from 'vuex'
+import CarouselSlide from '../components/CarouselSlide.vue';
+export default {
+  components:{
+    CarouselSlide,
+  },
+  computed: {
+    ...mapState(['companyId']),
+    ...mapGetters('vacancies',['getVacanciesByIdCompany']),
+    
+    vacanciesData (){
+     const vacancies = this.getVacanciesByIdCompany(this.companyId)
+     console.log(vacancies)
+     return vacancies
+    }
   }
 }
-</style>
+</script> 
+<template>
+    <CarouselSlide 
+     v-if="vacanciesData"
+     :vacancies="vacanciesData.vacancies"
+    />
+  
+</template>

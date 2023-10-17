@@ -1,4 +1,5 @@
-const vacanciesModule = {
+const vacancies = {
+  namespaced: true, // This sets up a namespace for the module
   state() {
     // State of Vacancies
     return {
@@ -80,6 +81,11 @@ const vacanciesModule = {
       ]
     }
   },
+  getters: {
+    getVacanciesByIdCompany: (state) => (id) => {
+      return state.companyVacancies.find((company) => company.id === id)
+    }
+  },
   mutations: {
     // Mutations for update of state Vacancies
   },
@@ -88,4 +94,4 @@ const vacanciesModule = {
   }
 }
 
-export default vacanciesModule
+export default vacancies

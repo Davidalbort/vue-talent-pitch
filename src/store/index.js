@@ -1,7 +1,7 @@
 // import modules
 import { createStore } from 'vuex'
 import company from './modules/company'
-import vacanciesModule from './modules/vacancies/index'
+import vacancies from './modules/vacancies/index'
 const store = createStore({
   state: {
     companyId: 1
@@ -14,7 +14,7 @@ const store = createStore({
   },
   modules: {
     company,
-    vacancies: vacanciesModule
+    vacancies
   }
 })
 

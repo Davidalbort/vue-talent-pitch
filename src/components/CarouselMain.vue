@@ -1,9 +1,11 @@
 <template>
-    <div class="carousel">
-        <slot></slot>
-        <button @click="next" class="next">Next</button>
-        <button @click="prev" class="prev">Prev</button>
-    </div>
+   
+        <div class="relative w-full overflow-auto sm:overflow-hidden flex gap-4">
+            <slot></slot>
+            
+        </div>
+
+
 </template>
 <script>
 export default {
@@ -12,37 +14,37 @@ export default {
             
         }
     },
-    methods: {
-        next(){
-            this.$emit('next')
-        },
-        prev(){
-            this.$emit('prev')
-        }
-    }
+   
 }
 </script>
 <style scoped>
-.carousel{
-    position: relative;
-    width: 800px;
-    height: 350px;
-    display: flex;
-    overflow: hidden;
+ .left-enter-active {
+    animation: leftInAnimation 0.4s ease-in-out;
+  }
+  .lef-leave-active {
+    animation: lefOutAnimation 0.4s ease-in-out ;
+  }
+  @keyframes leftInAnimation {
+    from { transform: translateX(100%);}
+    to { transform: translateX(0%);}
+  }
+  @keyframes leftOutAnimation {
+    from { transform: translateX(0%);}
+    to { transform: translateX(-100%);}
+  }
+  .right-enter-active {
+    animation: rightInAnimation 0.4s ease-in-out;
+  }
+  .right-leave-active {
+    animation: rightOutAnimation 0.4s ease-in-out ;
+  }
+  @keyframes rightInAnimation {
+    from { transform: translateX(-100%);}
+    to { transform: translateX(0%);}
+  }
+  @keyframes rightOutAnimation {
+    from { transform: translateX(0%);}
+    to { transform: translateX(+100%);}
+  }
 
-}
-button{
-    position: absolute;
-    height: 40px;
-    width: 50px;
-    top: calc(50% - 40px);
-    background-color: black;
-    color: aliceblue;
-}
-.next{
-    right: 0;
-}
-.prev{
-    left: 0;
-}
 </style>

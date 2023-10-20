@@ -25,6 +25,8 @@ import IconUsers from './IconUsers.vue'
 import IconVideo from './IconVideo.vue'
 import IconStarsVacancy from './IconStarsVacancy.vue'
 import IconShareAlt from './IconShareAlt.vue'
+import IconArrowLeft from './IconArrowLeft.vue'
+import IconArrowRight from './IconArrowRight.vue'
 
 export const iconComponents = {
   IconArrowDown,
@@ -53,5 +55,7 @@ export const iconComponents = {
   IconUsers,
   IconVideo,
   IconStarsVacancy,
-  IconShareAlt
+  IconShareAlt,
+  IconArrowLeft,
+  IconArrowRight
 }

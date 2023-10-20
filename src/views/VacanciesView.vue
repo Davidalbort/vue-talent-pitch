@@ -14,17 +14,20 @@ export default {
     
     vacanciesData (){
      const vacancies = this.getVacanciesByIdCompany(this.companyId)
-     console.log(vacancies)
      return vacancies
     }
   }
 }
 </script> 
 <template>
-  <CarouselFintech 
-    v-if="vacanciesData"
-    :slides="vacanciesData.vacancies"
-  />
+  <main>
+    <h2 class="text-xl text-blue-primary font-bold leading-4 mb-4">Publicadas recientemente</h2>
+    <CarouselFintech 
+      v-if="vacanciesData"
+      :slides="vacanciesData.vacancies"
+    />
+
+  </main>
   <!-- <VacancyItem /> -->
   <div>t</div>
 </template>

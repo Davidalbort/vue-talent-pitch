@@ -1,11 +1,11 @@
 <template>
-    <article class="w-64 pb-6 border border-gray-primary rounded-xl">
+    <article class="w-96 pb-6 border border-gray-primary rounded-xl sm:w-72">
     <ImageOnly 
      :src="bannerVacancy"
      alt="Image vacancy"
      :width="231"
-     :heigth="82"
-     class="w-full rounded-tl-lg rounded-tr-lg"
+     :height="82"
+     class="w-full h-20 rounded-tl-lg rounded-tr-lg object-cover"
     />
     <div class="bg-gray-fourth flex justify-between items-center px-2 py-1">
         <span class="text-gray-secondary">Experticia</span>
@@ -21,7 +21,7 @@
             <h3 class="text-blue-primary text-base uppercase">{{ nameVacancy }}</h3>
             <span class='bg-white-secondary text-blue-secondary text-sm px-1 rounded-b-full rounded-t-full'>Creada por organización: Nombre</span>
         </header>
-        <p class="text-gray-secondary">{{ description }}</p>
+        <p class="text-gray-secondary h-24">{{ description }}</p>
         <div class="flex justify-between px-5">
             <HistoryVacancy 
                 name="Vistas"

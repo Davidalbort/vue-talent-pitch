@@ -29,6 +29,5 @@ export default {
       :jobMoreSeeking="companyData.jobMoreSeeking"
     >
     </SummaryCompany>
-    This is a Home page
   </main>
 </template>

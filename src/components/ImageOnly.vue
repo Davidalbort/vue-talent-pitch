@@ -19,7 +19,7 @@
       },
       height: {
         type: [String, Number],
-        default: "auto", // Set a default value if needed
+
       },
     },
   };

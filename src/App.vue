@@ -48,7 +48,7 @@ export default {
       class="lg:absolute top-40 right-2/3 xl:left-32"
     />
     <div
-      class="block w-full lg:w-2/3 lg:absolute pl-2 pr-8 left-1/3 xl:pl-4 pr-20"
+      class="block w-full pl-2 pr-2  lg:w-2/3 lg:pr-8 lg:absolute left-1/3 xl:pl-4 pr-20"
     >
       <header class="my-6">
         <div

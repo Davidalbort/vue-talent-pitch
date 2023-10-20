@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-stretch gap-2">
-    <button @click="prev" class="hidden sm:flex w-6 h-auto bg-gray-primary flex justify-center items-center pointer">
+    <button @click="prev" class="hidden sm:inline sm:flex w-6 h-auto bg-gray-primary flex justify-center items-center pointer">
       <DynamicIcon 
         iconName="IconArrowLeft"
       />
@@ -23,7 +23,7 @@
         />
       </CarouselSlide>
     </CarouselMain>
-    <button @click="next" class="hidden sm:flex w-6 h-auto bg-gray-primary flex justify-center items-center pointer">
+    <button @click="next" class="hidden sm:inline sm:flex w-6 h-auto bg-gray-primary flex justify-center items-center pointer">
       <DynamicIcon 
         iconName="IconArrowRight"
       />
